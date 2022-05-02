@@ -1,0 +1,43 @@
+body {
+  @apply flex flex-col min-h-screen
+}
+
+.avatar {
+  @apply text-xs rounded-full w-5 h-5 flex items-center justify-center
+}
+
+.badge {
+  @apply inline-flex items-center justify-center font-medium
+}
+
+.btn {
+  @apply inline-flex flex-nowrap items-center justify-center font-medium whitespace-nowrap
+}
+
+.disabled {
+  @apply opacity-40 pointer-events-none
+}
+
+.control-check {
+  @apply my-1 h-3 w-3 border-2 focus:ring-offset-0 focus:ring mr-3 checked:hover:bg-green-600 checked:focus:bg-green-600
+}
+
+.control-outline-check-lg {
+  @apply my-1 h-4 w-4 border-2 focus:ring-offset-0 focus:ring mr-2 checked:hover:bg-transparent checked:focus:bg-transparent
+}
+
+.control-input {
+  @apply block w-full rounded-md text-sm mb-1 placeholder-gray-500 h-10
+}
+
+.modal-open {
+  @apply z-[-1] overflow-hidden fixed h-screen w-screen
+}
+
+.modal-backdrop {
+  @apply fixed top-0 left-0 z-40 w-full h-full pointer-events-none bg-gray-900/80
+}
+
+.modal {
+  @apply fixed bottom-0 left-0 z-40 w-full h-full flex flex-col justify-end
+}

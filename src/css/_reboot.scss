@@ -1,0 +1,12 @@
+html {
+  @apply text-gray-900
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+
+.overflow-x-auto {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,11 @@
+@import '~flag-icons/sass/flag-icons';
+@import "geomanist";
+@import './reboot';
+@import './helpers';
+@import './webfont/icomoon/style.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./alias";
