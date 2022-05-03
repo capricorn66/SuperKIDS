@@ -1,0 +1,15 @@
+mixin button(args)
+    - const DEFAULT_OPTIONS = {};
+    - DEFAULT_OPTIONS.type = 'button' // string
+    - DEFAULT_OPTIONS.variant = '' // boolean
+    - DEFAULT_OPTIONS.label = '' // boolean
+    - args = Object.assign({}, DEFAULT_OPTIONS, args || {});
+
+    button.btn(
+        type= args.type
+        class= attributes.class
+        class= args.size
+        class= args.variant)
+        != args.label
+
+

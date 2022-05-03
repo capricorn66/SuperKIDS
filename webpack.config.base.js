@@ -5,7 +5,6 @@ const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
   entry: {
     main: [path.resolve(__dirname, './src/javascripts/entry.js')],
-    styleguide: [path.resolve(__dirname, './src/javascripts/styleguide.js')]
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -28,9 +27,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js'],
-    alias: {
-      '../flags': path.resolve(__dirname, "node_modules/flag-icons/flags")
-    },
 
     // alias: {
     //   static: path.resolve(__dirname, 'src/static'),
@@ -40,10 +36,8 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: "./src/javascripts/routs.json", to: "./js/routs.json" },
         { from: "./src/favicon/" },
-        { from: "./src/static/", to: "./static/" },
-        { from: "./src/html/", to: "./html/" },
+        { from: "./src/static/", to: "./static/" }
       ],
     })
     // new webpack.ProvidePlugin({

@@ -1,0 +1,12 @@
+mixin link(args)
+    - const DEFAULT_OPTIONS = {};
+    - DEFAULT_OPTIONS.label = '' // string
+    - args = Object.assign({}, DEFAULT_OPTIONS, args || {});
+
+    a.btn(
+        href= "#"
+        class= attributes.class
+        class= args.class)
+        != args.label
+
+

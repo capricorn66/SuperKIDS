@@ -9,3 +9,24 @@
   pointer-events: auto;
   background-color: transparent;
 }
+
+.brand-shadow {
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    box-shadow: 0 0 200px 100px var(--color-pink-600);
+    top: 100px;
+    left: 100px;
+  }
+  &::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    box-shadow: 0 0 200px 100px var(--color-blue-400);
+    right: 100px;
+    bottom: 100px;
+  }
+
+
+}

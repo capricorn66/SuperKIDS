@@ -4,7 +4,7 @@ module.exports = {
     content: ["./src/pug/**/*.{pug,js}", "./src/javascripts/Tabs.js" ],
     theme: {
         fontFamily: {
-            'sans': ['"geomanist"'],
+            'sans': ["'Roboto', sans-serif"],
         },
         fontSize: {
             xs: ['8px', '14px'],
@@ -57,9 +57,15 @@ module.exports = {
                 900: '#083300',
             },
             blue: {
-                200: '#cce0ff',
-                300: '#1DC4F8',
-                600: '#0066FF',
+                100: '#D0D4F1',
+                200: '#ADB5E6',
+                300: '#8A95DB',
+                400: '#6777D0',
+                500: '#4458C5',
+                600: '#3447A8',
+                700: '#0B1D6E',
+                800: '#000E50',
+                900: '#080C1B'
             },
             pink: {
                 200: '#f8ccff',

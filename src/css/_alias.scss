@@ -11,7 +11,7 @@ body {
 }
 
 .btn {
-  @apply inline-flex flex-nowrap items-center justify-center font-medium whitespace-nowrap
+  @apply inline-flex flex-nowrap items-center justify-center font-medium whitespace-nowrap rounded-full
 }
 
 .disabled {
@@ -27,7 +27,7 @@ body {
 }
 
 .control-input {
-  @apply block w-full rounded-md text-sm mb-1 placeholder-gray-500 h-10
+  @apply block w-full rounded-full mb-2 placeholder-blue-800/40 h-14 text-blue-800 text-xl
 }
 
 .modal-open {
