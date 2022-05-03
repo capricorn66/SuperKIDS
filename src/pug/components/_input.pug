@@ -1,0 +1,19 @@
+mixin input(args)
+    - const DEFAULT_OPTIONS = {};
+    - DEFAULT_OPTIONS.type = 'text'
+    - DEFAULT_OPTIONS.placeholder = ''
+    - DEFAULT_OPTIONS.valid = false
+    - DEFAULT_OPTIONS.variant = ''
+    - DEFAULT_OPTIONS.value = ''
+    - args = Object.assign({}, DEFAULT_OPTIONS, args || {});
+
+    input.control-input(
+        type= args.type
+        placeholder= args.placeholder
+        value= args.value
+        class= attributes.class
+        class= args.valid && 'bg-red-200'
+        class= args.size
+        class= args.variant)
+
+

@@ -30,7 +30,8 @@ block body
                 .relative
                     +input({
                         placeholder: "Kod",
-                        type: "text"
+                        type: "text",
+                        valid: true
                     }).px-5
                     +button({
                         type: "submit",
@@ -38,6 +39,21 @@ block body
                         variant: "bg-blue-800 text-white text-xl",
                         label: '<i class="icon-arrow-right"></i>'
                     }).absolute.top-1.right-1
+
+            .fixed.w-full.top-4.flex.flex-col
+                .relative.rounded-lg.py-4.pl-4.pr-10.mb-2.text-blue-800.w-96.mx-auto(class="bg-white/90 max-w-[90%]")
+                    button.absolute.right-1.top-0.text-sm.p-2.opacity-60
+                        i.icon-close
+                    strong Logowanie nie powiodło się :(
+                    br
+                    |Wpisany kod jest nieprawidłowy
+                .relative.rounded-lg.py-4.pl-4.pr-10.mb-2.text-blue-800.w-96.mx-auto(class="bg-white/90 max-w-[90%]")
+                    button.absolute.right-1.top-0.text-sm.p-2.opacity-60
+                        i.icon-close
+                    strong Logowanie zablokowane
+                    br
+                    | Spróbuj za 10 min.
+
         footer.bg-blue-700.py-3
             .container.mx-auto.px-4.flex
                 svg(
