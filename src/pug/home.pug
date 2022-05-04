@@ -7,7 +7,111 @@ block body
     body.flex.flex-col.bg-blue-800.text-white
         +header
 
-        main(class="lg:flex-row").container.mx-auto.px-3.flex.flex-col.items-center.justify-center.grow
+        main.container.mx-auto.px-3.grow
+
+            .flex.flex-wrap.-mx-3.mb-6.swiper
+                .swiper-wrapper
+                    .px-3(class="w-full md:w-1/2").swiper-slide
+                        .rounded-2xl.bg-white.text-blue-800.drop-shadow-lg
+                            .rounded-t-2xl.flex.items-center.px-4.pt-6.mb-8(class="bg-blue-100/20 border-b border-blue-100/50 lg:px-8")
+                                img(src="/static/cup.svg" width="56" height="56").mr-4
+                                .font-bold(class="font-['Montserrat'] text-xl lg:text-sl xl:text-xxl") Nagrody na dzisiaj
+                            .flex.flex-col.px-4(class="lg:px-8")
+                                .flex.items-center.py-3(class="border-b border-blue-100/50")
+                                    .bg-blue-800.rounded-lg.text-white.text-xl.font-bold.w-10.h-10.flex.items-center.justify-center.mr-3(class="font-['Montserrat']") 1
+                                    div
+                                        .text-lg.font-bold.leading-tight Czas na komputer
+                                        .text-md.text-orange-500 1h - 100 pkt
+                                    +button({
+                                        type: "button",
+                                        size: 'h-10 px-6',
+                                        variant: "bg-orange-500 text-blue-800 text-lg font-bold",
+                                        label: 'Kup'
+                                    }).ml-auto.drop-shadow-lg
+                                .flex.items-center.py-3(class="border-b border-blue-100/50")
+                                    .bg-blue-800.rounded-lg.text-white.text-xl.font-bold.w-10.h-10.flex.items-center.justify-center.mr-3(class="font-['Montserrat']") 2
+                                    div
+                                        .text-lg.font-bold.leading-tight Czas na telewizor
+                                        .text-md.text-orange-500 1h - 100 pkt
+                                    +button({
+                                        type: "button",
+                                        size: 'h-10 px-6',
+                                        variant: "bg-orange-500 text-blue-800 text-lg font-bold",
+                                        label: 'Kup'
+                                    }).ml-auto.drop-shadow-lg
+                                .flex.items-center.py-3(class="border-b border-blue-100/50")
+                                    .bg-blue-800.rounded-lg.text-white.text-xl.font-bold.w-10.h-10.flex.items-center.justify-center.mr-3(class="font-['Montserrat']") 3
+                                    div
+                                        .text-lg.font-bold.leading-tight Słodycze
+                                        .text-md.text-orange-500 50 pkt
+                                    +button({
+                                        type: "button",
+                                        size: 'h-10 px-6',
+                                        variant: "bg-orange-500 text-blue-800 text-lg font-bold",
+                                        label: 'Kup'
+                                    }).ml-auto.drop-shadow-lg
+
+                            .flex.px-4.pt-6.pb-10(class="md:pb-6 lg:px-8")
+                                +link({
+                                    label: 'Zobacz wszystkie'
+                                })
+                        .rounded-b-3xl.top-100.bg-white.h-6.mx-2.-mt-4(class="md:hidden")
+
+                    .px-3(class="w-full md:w-1/2").swiper-slide
+                        .rounded-2xl.bg-white.text-blue-800.drop-shadow-lg
+                            .rounded-t-2xl.flex.items-center.px-4.pt-6.mb-8(class="bg-blue-100/20 border-b border-blue-100/50 lg:px-8")
+                                img(src="/static/star.svg" width="56" height="56").mr-4.mb-2.-mt-2
+                                .font-bold(class="font-['Montserrat'] text-xl lg:text-sl xl:text-xxl") Nagrody Specjalne
+                            .flex.flex-col.px-4(class="lg:px-8")
+                                .flex.flex-wrap.items-center.py-3.relative(class="border-b border-blue-100/50")
+                                    .bg-blue-800.rounded-lg.text-white.text-xl.font-bold.w-10.h-10.flex.items-center.justify-center.mr-3(class="font-['Montserrat']") 1
+                                    div
+                                        .text-lg.font-bold.leading-tight Disnayland
+                                        .text-md.text-orange-500 11053 / 25000 pkt
+                                    +button({
+                                        type: "button",
+                                        disabled: true,
+                                        size: 'h-10 px-6',
+                                        variant: "bg-pink-500 text-white text-lg font-bold",
+                                        label: 'Kup'
+                                    }).ml-auto.drop-shadow-lg
+                                    .w-full.h-1.rounded-full.absolute.bottom-0.overflow-hidden(class="bg-blue-100/50")
+                                        .h-1.absolute.top-0.left-0.from-orange-500.to-pink-500.bg-gradient-to-r(style="width: 48%")
+                                .flex.flex-wrap.items-center.py-3.relative(class="border-b border-blue-100/50")
+                                    .bg-blue-800.rounded-lg.text-white.text-xl.font-bold.w-10.h-10.flex.items-center.justify-center.mr-3(class="font-['Montserrat']") 2
+                                    div
+                                        .text-lg.font-bold.leading-tight Wakacje
+                                        .text-md.text-orange-500 11053 / 15000 pkt
+                                    +button({
+                                        type: "button",
+                                        disabled: true,
+                                        size: 'h-10 px-6',
+                                        variant: "bg-pink-500 text-white text-lg font-bold",
+                                        label: 'Kup'
+                                    }).ml-auto.drop-shadow-lg
+                                    .w-full.h-1.rounded-full.absolute.bottom-0.overflow-hidden(class="bg-blue-100/50")
+                                        .h-1.absolute.top-0.left-0.from-orange-500.to-pink-500.bg-gradient-to-r(style="width: 76%")
+                                .flex.flex-wrap.items-center.py-3.relative(class="border-b border-blue-100/50")
+                                    .bg-blue-800.rounded-lg.text-white.text-xl.font-bold.w-10.h-10.flex.items-center.justify-center.mr-3(class="font-['Montserrat']") 3
+                                    div
+                                        .text-lg.font-bold.leading-tight Rower
+                                        .text-md.text-orange-500 11053 / 6000 pkt
+                                    +button({
+                                        type: "button",
+                                        size: 'h-10 px-6',
+                                        variant: "bg-pink-500 text-white text-lg font-bold",
+                                        label: 'Kup'
+                                    }).ml-auto.drop-shadow-lg
+                                    .w-full.h-1.rounded-full.absolute.bottom-0.overflow-hidden(class="bg-blue-100/50")
+                                        .h-1.absolute.top-0.left-0.from-orange-500.to-pink-500.bg-gradient-to-r(style="width: 100%")
+
+                            .flex.px-4.pt-6.pb-10(class="md:pb-6 lg:px-8")
+                                +link({
+                                    label: 'Zobacz wszystkie'
+                                })
+                        .rounded-b-3xl.top-100.bg-white.h-6.mx-2.-mt-4(class="md:hidden")
+
+                .swiper-pagination.mb-2
 
         footer.bg-blue-700.py-3
             .container.mx-auto.px-3.flex

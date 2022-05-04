@@ -10,7 +10,7 @@ module.exports = {
             xl: '1200px',
         },
         fontFamily: {
-            'sans': ["'Roboto', sans-serif"],
+            'sans': ["'Roboto', sans-serif"]
         },
         fontSize: {
             xs: ['8px', '14px'],

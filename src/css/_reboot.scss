@@ -1,3 +1,10 @@
+:root {
+  --swiper-pagination-color: var(--color-pink-500);
+  --swiper-pagination-bullet-inactive-color: var(--color-blue-800);
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-size: 12px;
+}
+
 html {
   @apply text-blue-900
 }

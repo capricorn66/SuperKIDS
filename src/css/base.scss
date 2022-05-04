@@ -1,6 +1,9 @@
+@import '~swiper/swiper';
+@import '~swiper/modules/pagination/pagination';
 @import './reboot';
 @import './helpers';
 @import 'icomoon/style.css';
+
 
 @tailwind base;
 @tailwind components;

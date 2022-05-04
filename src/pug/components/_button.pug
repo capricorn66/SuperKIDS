@@ -1,13 +1,16 @@
 mixin button(args)
     - const DEFAULT_OPTIONS = {};
-    - DEFAULT_OPTIONS.type = 'button' // string
-    - DEFAULT_OPTIONS.variant = '' // boolean
-    - DEFAULT_OPTIONS.label = '' // boolean
+    - DEFAULT_OPTIONS.type = 'button'
+    - DEFAULT_OPTIONS.variant = ''
+    - DEFAULT_OPTIONS.label = ''
+    - DEFAULT_OPTIONS.disabled = false
     - args = Object.assign({}, DEFAULT_OPTIONS, args || {});
 
     button.btn(
         type= args.type
+        disabled = args.disabled
         class= attributes.class
+        class= args.disabled && "opacity-30"
         class= args.size
         class= args.variant)
         != args.label

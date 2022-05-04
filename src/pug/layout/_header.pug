@@ -3,8 +3,8 @@ mixin header(args)
     - DEFAULT_OPTIONS.variant = ''
     - args = Object.assign({}, DEFAULT_OPTIONS, args || {});
 
-    header.rounded-b-2xl.relative.z-10.from-orange-500.to-pink-500.py-6.drop-shadow-lg(
-        class="bg-gradient-to-b md:bg-gradient-to-r"
+    header.rounded-b-2xl.relative.z-10.from-orange-500.to-pink-500.py-6.drop-shadow-lg.mb-6(
+        class="bg-gradient-to-b md:bg-gradient-to-r md:mb-0"
         class=args.variant && args.variant
         class=attributes.class)
         .container.mx-auto.px-3.flex.items-center.flex-col(
@@ -41,7 +41,7 @@ mixin header(args)
                     br
                     |dzisiaj
                 .bg-white.flex.items-center.rounded-full.h-11.text-blue-800.text-sl.px-6.whitespace-nowrap.ml-auto 256 pkt
-    nav(id="nav").rounded-b-2xl.bg-white.pt-4.fixed.top-0.w-full(class="md:block md:static md:-mt-4 md:translate-y-0 md:z-0").z-20.transition.-translate-y-full
+    nav(id="nav").rounded-b-2xl.bg-white.pt-4.fixed.top-0.w-full.mb-6(class="md:block md:static md:-mt-4 md:translate-y-0 md:z-0").z-20.transition.-translate-y-full
         .container.mx-auto.px-7.flex.flex-col(class="md:flex-row md:items-center md:px-3")
             .flex.pb-5.mb-9.pt-2.w-full.border-b(class="border-blue-100/50 md:hidden")
                 svg(

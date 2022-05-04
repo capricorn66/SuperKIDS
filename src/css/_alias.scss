@@ -2,16 +2,8 @@ body {
   @apply flex flex-col min-h-screen
 }
 
-.avatar {
-  @apply text-xs rounded-full w-5 h-5 flex items-center justify-center
-}
-
-.badge {
-  @apply inline-flex items-center justify-center font-medium
-}
-
 .btn {
-  @apply inline-flex flex-nowrap items-center justify-center font-medium whitespace-nowrap rounded-full
+  @apply inline-flex flex-nowrap items-center justify-center whitespace-nowrap rounded-full
 }
 
 .disabled {
