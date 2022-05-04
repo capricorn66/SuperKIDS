@@ -23,9 +23,9 @@ mixin header(args)
                     path(fill="#FFFFFF" d="M130.1,1.7v20.1h-4.9v-1.5c-1.1,1.2-2.7,1.8-4.3,1.7c-4,0-7.2-2.9-7.2-7.6s3.2-7.6,7.2-7.6c1.5-0.1,3,0.5,4.1,1.5V1.6L130.1,1.7L130.1,1.7z M125,14.5c0-2.2-1.3-3.5-3.1-3.5s-3.1,1.2-3.1,3.5s1.3,3.5,3.1,3.5C123.6,18,125,16.7,125,14.5")
                     path(fill="#FFFFFF" d="M105.4,2.9c0.1-1.6,1.4-2.8,2.9-2.8c0.1,0,0.1,0,0.2,0c1.9,0,3.2,1.1,3.2,2.7s-1.3,2.9-2.9,2.8c-0.1,0-0.2,0-0.3,0c-1.6,0.2-3-1-3.1-2.5C105.4,3,105.4,2.9,105.4,2.9 M105.9,7.2h5.2v14.7h-5.2V7.2z")
                     path(fill="#FFFFFF" d="M93.3,14.9l-2,2.1v4.8H86v-19h5.3v7.9l7.4-7.9h5.9l-7.8,8.4l8.2,10.6h-6.2L93.3,14.9z")
-                button(type="button" class="md:hidden" data-nav-toggle="#nav").text-blue-800.text-xxl.ml-auto
+                button(type="button" class="md:hidden" data-nav-toggle="#nav").text-blue-900.text-xxl.ml-auto
                     i.icon-menu
-            .flex.items-center.bg-blue-800.rounded-full.py-2.px-3.w-full.mb-2(
+            .flex.items-center.bg-blue-900.rounded-full.py-2.px-3.w-full.mb-2(
                 class="md:ml-auto md:w-auto md:mb-0")
                 img(src="/static/_temp/profile-photo.jpg").w-12.h-12.rounded-full.border-2.border-orange-500.mr-5
                 .mr-6(class="md:hidden lg:block")
@@ -34,14 +34,14 @@ mixin header(args)
                 .flex.items-end.mr-3.ml-auto
                     .text-xxl.font-bold.leading-none.mr-2 11053
                     .text-md.text-orange-500.leading-none.pb-1 pkt.
-            .flex.items-center.bg-blue-800.rounded-full.py-2.pl-6.pr-2.w-full(
+            .flex.items-center.bg-blue-900.rounded-full.py-2.pl-6.pr-2.w-full(
                 class="md:ml-5 md:w-auto")
                 img(src="/static/calendar.svg").h-10.mr-5
                 .mr-6.text-lg.leading-tight Zdobyłeś
                     br
                     |dzisiaj
-                .bg-white.flex.items-center.rounded-full.h-11.text-blue-800.text-sl.px-6.whitespace-nowrap.ml-auto 256 pkt
-    nav(id="nav").rounded-b-2xl.bg-white.pt-4.fixed.top-0.w-full.mb-6(class="md:block md:static md:-mt-4 md:translate-y-0 md:z-0").z-20.transition.-translate-y-full
+                .bg-white.flex.items-center.rounded-full.h-11.text-blue-900.text-sl.px-6.whitespace-nowrap.ml-auto 256 pkt
+    nav(id="nav" class="md:block md:static md:-mt-4 md:translate-y-0 md:z-0 md:drop-shadow-none").rounded-b-2xl.bg-white.pt-4.fixed.top-0.w-full.mb-6.z-20.transition.-translate-y-full.drop-shadow-2xl
         .container.mx-auto.px-7.flex.flex-col(class="md:flex-row md:items-center md:px-3")
             .flex.pb-5.mb-9.pt-2.w-full.border-b(class="border-blue-100/50 md:hidden")
                 svg(
@@ -57,23 +57,23 @@ mixin header(args)
                     path(fill="#009BDC" d="M130.1,1.7v20.1h-4.9v-1.5c-1.1,1.2-2.7,1.8-4.3,1.7c-4,0-7.2-2.9-7.2-7.6s3.2-7.6,7.2-7.6c1.5-0.1,3,0.5,4.1,1.5V1.6L130.1,1.7L130.1,1.7z M125,14.5c0-2.2-1.3-3.5-3.1-3.5s-3.1,1.2-3.1,3.5s1.3,3.5,3.1,3.5C123.6,18,125,16.7,125,14.5")
                     path(fill="#FF6F00" d="M105.4,2.9c0.1-1.6,1.4-2.8,2.9-2.8c0.1,0,0.1,0,0.2,0c1.9,0,3.2,1.1,3.2,2.7s-1.3,2.9-2.9,2.8c-0.1,0-0.2,0-0.3,0c-1.6,0.2-3-1-3.1-2.5C105.4,3,105.4,2.9,105.4,2.9 M105.9,7.2h5.2v14.7h-5.2V7.2z")
                     path(fill="#98C511" d="M93.3,14.9l-2,2.1v4.8H86v-19h5.3v7.9l7.4-7.9h5.9l-7.8,8.4l8.2,10.6h-6.2L93.3,14.9z")
-                button(type="button" data-nav-close).text-blue-800.text-xl.ml-auto
+                button(type="button" data-nav-close).text-blue-900.text-xl.ml-auto
                     i.icon-close
-            a(href="#" class="border-b border-blue-100/50 md:border-0 md:mr-8 py-3").text-blue-800.font-bold.flex.items-center.leading-tight
+            a(href="#" class="border-b border-blue-100/50 md:border-0 md:mr-8 py-3").text-blue-900.font-bold.flex.items-center.leading-tight
                 img(src="/static/profile.svg").h-8.mr-4
                 |Mój profil
-            a(href="#" class="border-b border-blue-100/50 md:border-0 md:mr-8 py-3").text-blue-800.font-bold.flex.items-center.leading-tight
+            a(href="#" class="border-b border-blue-100/50 md:border-0 md:mr-8 py-3").text-blue-900.font-bold.flex.items-center.leading-tight
                 img(src="/static/cup.svg").h-8.mr-4
                 |Nagrody na dzisiaj
-            a(href="#" class="border-b border-blue-100/50 md:border-0 md:mr-8 py-3").text-blue-800.font-bold.flex.items-center.leading-tight
+            a(href="#" class="border-b border-blue-100/50 md:border-0 md:mr-8 py-3").text-blue-900.font-bold.flex.items-center.leading-tight
                 img(src="/static/star.svg").h-8.mr-4
                 |Nagrody Specjalne
-            a(href="#" class="border-b border-blue-100/50 md:border-0 md:mr-8 py-3").text-blue-800.font-bold.flex.items-center.leading-tight
+            a(href="#" class="border-b border-blue-100/50 md:border-0 md:mr-8 py-3").text-blue-900.font-bold.flex.items-center.leading-tight
                 img(src="/static/bag.svg").h-8.mr-4
                 |Historia zakupów
             +button({
                 type: "button",
                 size: 'h-10 px-6',
-                variant: "bg-blue-800 text-white text-lg",
+                variant: "bg-blue-900 text-white text-lg",
                 label: 'Wyloguj'
             })(class="md:ml-auto md:my-0 my-6")
