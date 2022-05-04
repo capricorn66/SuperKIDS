@@ -3,6 +3,12 @@ let plugin = require('tailwindcss/plugin')
 module.exports = {
     content: ["./src/pug/**/*.{pug,js}", "./src/javascripts/Tabs.js" ],
     theme: {
+        screens: {
+            sm: '480px',
+            md: '768px',
+            lg: '976px',
+            xl: '1200px',
+        },
         fontFamily: {
             'sans': ["'Roboto', sans-serif"],
         },
@@ -24,37 +30,11 @@ module.exports = {
             black: '#000',
             white: '#fff',
 
-            gray: {
-                100: '#f3f5f6',
-                200: '#e1e6e9',
-                300: '#cfd0d7',
-                400: '#ccd5db',
-                500: '#919597',
-                600: '#73787F',
-                700: '#606060',
-                750: '#353b45',
-                800: '#29384A',
-                850: '#252B35',
-                900: '#161E29',
-            },
             red: {
                 200: '#ffcccc',
-                300: '#E7CECE',
-                600: '#FF0000',
-                700: '#D62929',
             },
             orange: {
-                200: '#fdebd0',
-                600: '#F39C12',
-            },
-            green: {
-                100: '#F0FFED',
-                200: '#d2f3cc',
-                400: '#96ed88',
-                600: '#1dc400',
-                700: '#1C790B',
-                800: '#105405',
-                900: '#083300',
+                500: '#FFB01F',
             },
             blue: {
                 100: '#D0D4F1',
@@ -68,8 +48,7 @@ module.exports = {
                 900: '#080C1B'
             },
             pink: {
-                200: '#f8ccff',
-                600: '#DB00FF',
+                500: '#FF00AA',
             },
 
         },

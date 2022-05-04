@@ -19,7 +19,7 @@ body {
 }
 
 .control-check {
-  @apply my-1 h-3 w-3 border-2 focus:ring-offset-0 focus:ring mr-3 checked:hover:bg-green-600 checked:focus:bg-green-600
+  @apply my-1 h-3 w-3 border-2 focus:ring-offset-0 focus:ring mr-3 checked:hover:bg-blue-600 checked:focus:bg-blue-600
 }
 
 .control-outline-check-lg {
@@ -35,7 +35,7 @@ body {
 }
 
 .modal-backdrop {
-  @apply fixed top-0 left-0 z-40 w-full h-full pointer-events-none bg-gray-900/80
+  @apply fixed top-0 left-0 z-40 w-full h-full pointer-events-none bg-blue-900/80
 }
 
 .modal {
