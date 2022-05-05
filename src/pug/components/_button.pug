@@ -10,7 +10,7 @@ mixin button(args)
         type= args.type
         disabled = args.disabled
         class= attributes.class
-        class= args.disabled && "opacity-30"
+        class= args.disabled && "disabled"
         class= args.size
         class= args.variant)
         != args.label
