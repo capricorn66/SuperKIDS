@@ -1,6 +1,11 @@
 mixin header(args)
     - const DEFAULT_OPTIONS = {};
     - DEFAULT_OPTIONS.variant = ''
+    - DEFAULT_OPTIONS.nav = []
+    - DEFAULT_OPTIONS.nav.item = {}
+    - DEFAULT_OPTIONS.nav.item.label = ''
+    - DEFAULT_OPTIONS.nav.item.img = ''
+    - DEFAULT_OPTIONS.nav.item.active = false
     - args = Object.assign({}, DEFAULT_OPTIONS, args || {});
 
     header.rounded-b-2xl.relative.z-10.from-orange-500.to-pink-500.py-6.drop-shadow-lg.mb-6(
@@ -60,18 +65,18 @@ mixin header(args)
                     path(fill="#98C511" d="M93.3,14.9l-2,2.1v4.8H86v-19h5.3v7.9l7.4-7.9h5.9l-7.8,8.4l8.2,10.6h-6.2L93.3,14.9z")
                 button(type="button" data-nav-close).text-blue-900.text-xl.ml-auto
                     i.icon-close
-            a(href="#" class="border-b border-blue-100/50 md:border-0 md:mr-8 py-3").text-blue-900.font-bold.flex.items-center.leading-tight
-                img(src="/static/profile.svg").h-8.mr-4
-                |Mój profil
-            a(href="#" class="border-b border-blue-100/50 md:border-0 md:mr-8 py-3").text-blue-900.font-bold.flex.items-center.leading-tight
-                img(src="/static/cup.svg").h-8.mr-4
-                |Nagrody na dzisiaj
-            a(href="#" class="border-b border-blue-100/50 md:border-0 md:mr-8 py-3").text-blue-900.font-bold.flex.items-center.leading-tight
-                img(src="/static/star.svg").h-8.mr-4
-                |Nagrody Specjalne
-            a(href="#" class="border-b border-blue-100/50 md:border-0 md:mr-8 py-3").text-blue-900.font-bold.flex.items-center.leading-tight
-                img(src="/static/bag.svg").h-8.mr-4
-                |Historia zakupów
+
+
+            each item in args.nav
+                a(
+                    href="#"
+                    class="border-b border-blue-100/50 md:border-0 md:mr-8 py-3"
+                    class= item.active ? 'text-orange-500 relative': 'hover:text-orange-500 text-blue-900').transition.font-bold.flex.items-center.leading-tight
+                    img(src=`/static/${item.img}`).h-8.mr-4
+                    = item.label
+                    if item.active
+                        .absolute.bottom-0.h-1.bg-orange-500.w-full.rounded-t-xl
+
             +button({
                 type: "button",
                 size: 'h-10 px-6',

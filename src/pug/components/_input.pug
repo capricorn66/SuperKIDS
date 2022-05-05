@@ -5,8 +5,12 @@ mixin input(args)
     - DEFAULT_OPTIONS.valid = false
     - DEFAULT_OPTIONS.variant = ''
     - DEFAULT_OPTIONS.value = ''
+    - DEFAULT_OPTIONS.label = ''
     - args = Object.assign({}, DEFAULT_OPTIONS, args || {});
 
+
+    if args.label
+        label(class= attributes.class class="mb-2 block text-md opacity-50")= args.label
     input.control-input(
         type= args.type
         placeholder= args.placeholder

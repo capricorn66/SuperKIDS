@@ -1,11 +1,18 @@
 extends layout/_layout
 
 block variables
-    - title = 'START';
+    - title = 'HOME';
 
 block body
     body.flex.flex-col.bg-blue-900.text-white
-        +header
+        +header({
+            nav: [
+                {label: 'Mój profil', img: 'profile.svg'},
+                {label: 'Nagrody na dzisiaj', img: 'cup.svg'},
+                {label: 'Nagrody Specjalne', img: 'star.svg'},
+                {label: 'Historia zakupów', img: 'bag.svg'}
+            ]
+        })
 
         main.container.mx-auto.px-3.grow
 
