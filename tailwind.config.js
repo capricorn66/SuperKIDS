@@ -1,7 +1,7 @@
 let plugin = require('tailwindcss/plugin')
 
 module.exports = {
-    content: ["./src/pug/**/*.{pug,js}", "./src/javascripts/Tabs.js" ],
+    content: ["./src/pug/**/*.{pug,js}" ],
     theme: {
         screens: {
             sm: '480px',
