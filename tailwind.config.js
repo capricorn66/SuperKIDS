@@ -112,9 +112,6 @@ module.exports = {
         },
     },
     plugins: [
-        plugin(function ({addVariant}) {
-            addVariant('forth', '&:nth-child(4n - 2)')
-        }),
         require('@tailwindcss/forms'),
         require('tailwind-css-variables')(
             {
